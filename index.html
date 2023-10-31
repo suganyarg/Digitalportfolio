@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Website</title>
+  <style>
+    /* styles.css */
+body {
+ background-image: url("profile3.JPG");
+  background-size: cover;
+ 
+  color: #ff4f98f8;
+  text-align: left;
+  padding: 0px;
+  font-family: Arial, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  margin: 0px;
+  
+}
+
+header {
+  
+  background-color: #4fffca57;
+  color: yellowgreen;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #6677;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: square;
+  margin: 200;
+  padding: 200;
+}
+
+nav ul li {
+  display: -webkit-inline-flex;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: rgb(34, 2, 2);
+  color: black;
+}
+
+main {
+  padding: 20px;
+  
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+
+h2 {
+  margin-inline-start: 0cqw;
+  color: rgba(205, 155, 63, 0.897);
+}
+
+footer {
+  background-color: #5656;
+  color: palegreen;
+  padding: 10px;
+  text-align: center;
+}
+  </style>
+ 
+  </head>
+<body >
+  
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+  </header>
+
+  <nav>
+    <ul>
+      
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Exducation</a></li>
+      <li><a href="#graduation">Graduation</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+    <section id="about">
+      <h2>About Me</h2>
+      <p>"We become what we think about." –Earl Nightingale
+      </p>
+            <p>I am SUGANYA R, daughter of Rajakumar. Native <i>Tirunelveli...</i> I study for earn money, to live a independent life!!! I want to become a hacker. I wish to work for people. I want to build my life as inspired to everyone. Now i'm looking forward to start my career in IT field...My biggest dream is explore the world and gain different culture knowledge. I'd like to be an updated one</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>HSC</strong> -<a href="https://g.co/kgs/nJ1i1d"> GOVT.Hr.Sec.School, Moolakaraipatti</a> </li>
+        <li><strong>SSLC</strong> -<a href="https://g.co/kgs/nJ1i1d">  GOVT.Hr.Sec.School, Moolakaraipatti</a></li>
+      </ul>
+    </section>
+
+    <section id="graduation">
+      <h2>Graduation</h2>
+      <ul>
+        <li><strong><a href="http://msuniv.ac.in/">Manonmaniyam sundharanar university</a></strong> - Bachelor of Science in Computer Science (2021 - 2024)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: rsuganyasekar2003@gmail.com</p>
+      <p>Phone: 8754793049</p>
+      <h2>Follow Me On</h2>
+      <li>Instagram: rowdy._.baby2k</li>
+      <li>Facebook: suganyasuganya</li>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <li><a href="project.html">Portfolio</a></li>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 My Personal Website. All rights reserved.</p>
+  </footer>
+  <script>
+    // script.js
+window.addEventListener('DOMContentLoaded', () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(position => {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        const location = document.getElementById("location");
+        location.textContent = `${latitude}, ${longitude}`;
+      }, error => {
+        console.error(error);
+        const location = document.getElementById("location");
+        location.textContent = "Location not available";
+      });
+    } else {
+      const location = document.getElementById("location");
+      location.textContent = "Geolocation not supported";
+    }
+  });
+  </script>
+</body>
+</html>
